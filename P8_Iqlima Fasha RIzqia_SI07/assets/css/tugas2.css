@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    background-color: pink;
+}
+
+header{
+    height: 10vh;
+    background: rgb(0, 162, 255);
+    padding: 20px;
+   
+}
+
+footer{
+    height: 10vh;
+    background:  rgb(0, 162, 255);
+    padding: 20px;
+}
+
+header, footer, article, aside{
+    padding: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+}
+
+#main{
+    display: flex;
+    flex: 1;
+}
+
+#main article{
+    
+        flex: 1;
+        order: 2;
+        background-color: red;
+}
+
+
+#main aside{
+    flex: 0 0 30vw;
+    margin-right: 40px;
+}
+
+#main > aside{
+    background-color: blue;
+    order: 1;
+    
+    
+}
+
+.img{
+    display: flex;
+}
+
+img{
+    text-align: center;
+    flex-direction: row;
+    margin: 1px;
+    padding-top: 200px;
+    width: 240px;
+    height: 200px;
+}
+
+
